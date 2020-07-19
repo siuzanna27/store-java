@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainApp<Store>",
+            "request": "launch",
+            "mainClass": "com.das.group.assignment.store.MainApp",
+            "projectName": "Store"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainPage<Store>",
+            "request": "launch",
+            "mainClass": "com.das.group.assignment.store.MainPage",
+            "projectName": "Store"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainPageBackup<Store>",
+            "request": "launch",
+            "mainClass": "com.das.group.assignment.store.MainPageBackup",
+            "projectName": "Store"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MyCart<Store>",
+            "request": "launch",
+            "mainClass": "com.das.group.assignment.store.MyCart",
+            "projectName": "Store"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MyCartCopy<Store>",
+            "request": "launch",
+            "mainClass": "com.das.group.assignment.store.MyCartCopy",
+            "projectName": "Store"
+        }
+    ]
+}
