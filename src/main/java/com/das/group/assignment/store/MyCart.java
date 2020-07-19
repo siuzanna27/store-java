@@ -282,7 +282,6 @@ public class MyCart extends javax.swing.JFrame {
                 myStorePage.MyCartBtn.setText("My Cart");
                 loadItems();
 
-              
         }// GEN-LAST:event_jButton1ActionPerformed
 
         /**
@@ -338,11 +337,13 @@ public class MyCart extends javax.swing.JFrame {
 
                 // System.out.println(sum);
                 CalcPrc();
-                myCartList.forEach(item -> {
+
+                for (StoreItem item : myCartList) {
                         final CartItemPanel firstItem = new CartItemPanel(item, myCartList, myStorePage);
                         firstItem.ParentFrame = this;
                         CartItemsPanel.add(firstItem);
-                });
+                }
+
                 CartItemsPanel.revalidate();
                 CartItemsPanel.repaint();
 

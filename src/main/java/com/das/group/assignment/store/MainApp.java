@@ -69,9 +69,10 @@ public class MainApp {
     myStoreItemList.add(new StoreItem("Soursop", 10, 1));
     // myStoreItemList.add(new StoreItem("Tangerine", 10, 1));
     // myStoreItemList.add(new StoreItem("Watermelon", 10, 1));
-    searchedStoreItemList.forEach(item -> {
+
+    for(StoreItem item : myStoreItemList){
       searchedStoreItemList.add(item);
-    });
+    }
 
     myCartFrame.myCartList = myCartList;
     myStorePage.myCartList = myCartList;

@@ -46,7 +46,8 @@ public class MainPage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
@@ -93,53 +94,46 @@ public class MainPage extends javax.swing.JFrame {
 
         javax.swing.GroupLayout ProductsPanelLayout = new javax.swing.GroupLayout(ProductsPanel);
         ProductsPanel.setLayout(ProductsPanelLayout);
-        ProductsPanelLayout.setHorizontalGroup(
-            ProductsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 699, Short.MAX_VALUE)
-        );
-        ProductsPanelLayout.setVerticalGroup(
-            ProductsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 787, Short.MAX_VALUE)
-        );
+        ProductsPanelLayout.setHorizontalGroup(ProductsPanelLayout
+                .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGap(0, 699, Short.MAX_VALUE));
+        ProductsPanelLayout.setVerticalGroup(ProductsPanelLayout
+                .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGap(0, 787, Short.MAX_VALUE));
 
         jScrollPane1.setViewportView(ProductsPanel);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(279, 279, 279))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(SearchField)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(SearchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+        layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(
+                javax.swing.GroupLayout.Alignment.TRAILING,
+                layout.createSequentialGroup().addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel1).addGap(279, 279, 279))
+                .addGroup(layout.createSequentialGroup().addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup().addComponent(SearchField)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(SearchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 144,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(MyCartBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 144,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(16, 16, 16))
+                                .addGroup(layout
+                                        .createSequentialGroup().addComponent(jScrollPane1,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE, 703, Short.MAX_VALUE)
+                                        .addContainerGap()))));
+        layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup().addGap(10, 10, 10).addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(MyCartBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(16, 16, 16))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 703, Short.MAX_VALUE)
-                        .addContainerGap())))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(MyCartBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SearchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 791, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(SearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 40,
+                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(MyCartBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41,
+                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SearchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40,
+                                        javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(15, 15, 15)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 791, Short.MAX_VALUE)
+                        .addContainerGap()));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -147,14 +141,12 @@ public class MainPage extends javax.swing.JFrame {
     protected void SearchFieldActionPerformed(ActionEvent evt) {
     }
 
-
     protected void SearchBtnActionPerformed(ActionEvent evt) {
         String searchText = SearchField.getText();
-
         if (searchText.trim().isEmpty()) {
-            myStoreItemList.forEach(item -> {
+            for (StoreItem item : myStoreItemList) {
                 searchedStoreItemList.add(item);
-            });
+            }
         }
 
         searchedStoreItemList = new LinkedList<StoreItem>();
@@ -257,11 +249,10 @@ public class MainPage extends javax.swing.JFrame {
 
         ProductsPanel.setLayout(experimentLayout);
 
-        searchedStoreItemList.forEach(item -> {
+        for (StoreItem item : searchedStoreItemList) {
             final ProductItemPanel firstItem = new ProductItemPanel(item, myCartList, MyCartBtn);
             ProductsPanel.add(firstItem);
-
-        });
+        }
         ProductsPanel.revalidate();
         ProductsPanel.repaint();
 
